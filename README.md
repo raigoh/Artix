@@ -2,6 +2,17 @@
 
 This is a simple command-line tool for encoding and decoding ASCII art. It supports both single-line and multi-line encoding/decoding.
 
+## Content
+
+1. [Usage](#usage)
+    - [Decode a Single Line](#decode-a-single-line)
+    - [Encode a Single Line](#encode-a-single-line)
+    - [Encode Multiple Lines from a File](#encode-multiple-lines-from-a-file)
+    - [Decode Multiple Lines from a File](#decode-multiple-lines-from-a-file)
+    - [Help](#help)
+2. [Installation](#installation)
+3. [Features](#features)
+
 ## Usage
 
 ### Decode a Single Line
@@ -40,20 +51,20 @@ go run . -h
 
 ## Installation
 
-Clone this repository to your local machine:
+1. Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/your_username/your_repository.git
 cd your_repository
 ```
 
-Navigate to the project directory:
+2. Navigate to the project directory:
 
 ```bash
 cd art
 ```
 
-To run commands, go art-decoder folder:
+3. To run commands, go art-decoder folder:
 
 ```bash
 cd art-decoder
