@@ -61,12 +61,12 @@ cd art-decoder
 
 ## Features
 
-Single-Line Encoding: Encode a single line of ASCII art by specifying the input string.
-Single-Line Decoding: Decode a single line of encoded ASCII art.
-Multi-Line Encoding: Encode multiple lines of ASCII art from a file. Each line of the file will be encoded individually.
-Multi-Line Decoding: Decode multiple lines of encoded ASCII art from a file. Each line of the file will be decoded individually.
-Error Handling: Handle various error scenarios gracefully, such as unbalanced brackets, missing arguments, invalid input, etc. Errors are displayed with informative messages.
-Command-Line Interface: Utilize a simple command-line interface to interact with the tool, making it easy to use and integrate into scripts or workflows.
-Help Information: Provide clear usage instructions and help information for users to understand how to use the tool effectively.
-Customizable Encoding: Encode consecutive characters and pairs in ASCII art into a compact format, making the output more concise and efficient.
-Go Package Structure: Organize the tool's functionality into separate packages, promoting modularity and maintainability.
+* Single-Line Encoding: Encode a single line of ASCII art by specifying the input string.
+* Single-Line Decoding: Decode a single line of encoded ASCII art.
+* Multi-Line Encoding: Encode multiple lines of ASCII art from a file. Each line of the file will be encoded individually.
+* Multi-Line Decoding: Decode multiple lines of encoded ASCII art from a file. Each line of the file will be decoded individually.
+* Error Handling: Handle various error scenarios gracefully, such as unbalanced brackets, missing arguments, invalid input, etc. Errors are displayed with informative messages.
+* Command-Line Interface: Utilize a simple command-line interface to interact with the tool, making it easy to use and integrate into scripts or workflows.
+* Help Information: Provide clear usage instructions and help information for users to understand how to use the tool effectively.
+* Customizable Encoding: Encode consecutive characters and pairs in ASCII art into a compact format, making the output more concise and efficient.
+* Go Package Structure: Organize the tool's functionality into separate packages, promoting modularity and maintainability.
