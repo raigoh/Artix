@@ -20,7 +20,7 @@ To decode a single line of ASCII art, run the following command:
 ```
 go run . "[5 #][5 -_]-[5 #]"
 ```
-This will decode the provided ASCII art and print the #####-_-_-_-_-_-##### result.
+This will decode the provided ASCII art and print the #####-\\_-\\_-\\_-\\_-\\_-\\_-##### result.
 
 ### Encode a Single Line
 To encode a single line of ASCII art, run the following command:
