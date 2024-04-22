@@ -54,7 +54,7 @@ go run . -h
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your_username/your_repository.git
+git clone https://gitea.koodsisu.fi/raigohoim/art.git
 cd your_repository
 ```
 
