@@ -10,6 +10,7 @@ This project provides a web application for decoding and encoding ASCII art.
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
+- [Screenshots](#screenshots)
 
 ## Introduction
 
@@ -56,44 +57,36 @@ The server will start running on http://localhost:8080.
 
 The project has the following structure:
 
+```markdown
 art/
+├───art-decode/
+│ ├── flags.go
+│ ├── README.md
+│ ├── art-encoder.go
+│ ├── art-decoder.go
+│ └── error_handling.go
 │
-├───art-decode
-│ │ flags.go
-│ │ README.md
-│ │ art-encoder.go
-│ │ art-decoder.go
-│ │ error_handling.go
+├───art-interface/
+│ ├── server.go
+│ ├── README.md
 │ │
-│ └───Resources
-│ plane.encoded.txt
-│ lion.encoded.txt
-│ cats.art.txt
-│ lion.art.txt
-│ plane.art.txt
-│ kood.encoded.txt
-│ kood.art.txt
-│ cats.encoded.txt
+│ ├───templates/
+│ │ ├── index.html
+│ │ └── shutdown.html
+│ │
+│ ├───static/
+│ │ ├── style.css
+│ │ └── style1.css
+│ │
+│ └───functions/
+│ ├── render.go
+│ ├── pagedata.go
+│ ├── index.go
+│ ├── shutdown.go
+│ └── process.go
 │
-├───art-interface
-│ │ server.go
-│ │ README.md
-│ │
-│ ├───templates
-│ │ index.html
-│ │ shutdown.html
-│ │
-│ ├───static
-│ │ style.css
-│ │ style1.css
-│ │
-│ └───functions
-│ render.go
-│ pagedata.go
-│ index.go
-│ shutdown.go
-│ process.go
 └── go.mod
+```
 
 ## Contributing
 
