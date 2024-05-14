@@ -1,0 +1,126 @@
+:root {
+  --primary-bg-color: #6c8c9e;
+  --primary-text-color: #f7e7ce;
+  --secondary-bg-color: whitesmoke;
+  --border-color: #ccc;
+  --button-border-color: #1a1a1a;
+  --button-bg-color: whitesmoke;
+  --button-hover-bg-color: lightslategray;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--primary-bg-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-text-color); /* Champagne */
+  font-family: "Poetsen One", sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container {
+  flex: 1;
+  padding: 10px;
+  background: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.text-container form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows the form to take most of the container's space */
+}
+
+.text-container form textarea {
+  flex-grow: 1; /* Makes the textarea expand to fill the available space */
+}
+
+.text-container form .options {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left side */
+}
+
+.text-container form .options button {
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.text-container form .quit {
+  display: flex;
+  justify-content: flex-end; /* Align button to the right side */
+  margin-top: 18px;
+}
+
+textarea {
+  resize: none;
+  height: 55vh;
+  width: 100%;
+}
+
+h2 {
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  font-family: "Poetsen One", sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid var(--button-border-color);
+  background-color: var(--button-bg-color);
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+button:hover::after {
+  transform: scale(4);
+}
+
+button:hover {
+  border-color: #666666;
+  background: var(--button-hover-bg-color);
+}
+
+.bottom-middle {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--primary-text-color); /* Champagne */
+}

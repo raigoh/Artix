@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASCII Art Decoder</title>
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <h1>ASCII Art Decoder/Encoder</h1>
+    <div class="container">
+      <div class="text-container">
+        <form action="/process" method="post" id="inputForm">
+          <h2>Input:</h2>
+          <textarea id="inputText" name="inputText"></textarea><br />
+          <div class="options">
+            <button type="submit" name="operation" value="decode">
+              Decode
+            </button>
+            <button type="submit" name="operation" value="encode">
+              Encode
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="text-container">
+        <form action="/shutdown" method="post">
+          <h2>Result:</h2>
+          <textarea class="result-textarea" readonly>{{ .Result }}</textarea>
+          <div class="quit">
+            <button type="submit" name="operation">Shutdown Server</button>
+          </div>
+        </form>
+      </div>
+      <div class="bottom-middle">
+        <h3>HTTP Status: {{ .HTTPStatus }}</h3>
+      </div>
+    </div>
+  </body>
+</html>
