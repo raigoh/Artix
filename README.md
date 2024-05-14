@@ -64,7 +64,17 @@ art/
 │ ├── README.md
 │ ├── art-encoder.go
 │ ├── art-decoder.go
-│ └── error_handling.go
+│ ├── error_handling.go
+│ │
+│ └───Resources/
+│ ├── cats.art.txt
+│ ├── cats.encoded.txt
+│ ├── kood.art.txt
+│ ├── kood.encoded.txt
+│ ├── lion.art.txt
+│ ├── lion.encoded.txt
+│ ├── plane.art.txt
+│ └── plane.encoded.txt
 │
 ├───art-interface/
 │ ├── server.go
