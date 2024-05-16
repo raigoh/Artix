@@ -9,8 +9,16 @@ import (
 
 func ShutdownHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Shutting down server...")
-	// Render the shutdown confirmation HTML
-	renderTemplate(w, "templates/shutdown.html", nil)
+
+	// Set HTTP status code to OK (200)
+	w.WriteHeader(http.StatusOK)
+
+	// Define empty data for rendering
+	data := IndexPageData{}
+
+	// Render the shutdown confirmation HTML with empty data
+	renderTemplate(w, "templates/shutdown.html", data)
+
 	// Gracefully shutdown the server after a delay
 	go func() {
 		time.Sleep(2 * time.Second)
