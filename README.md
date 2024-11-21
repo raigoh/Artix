@@ -28,13 +28,13 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://gitea.koodsisu.fi/raigohoim/art.git
+git clone https://github.com/raigoh/Artix.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd art/art-interface
+cd Artix/art-interface
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ The server will start running on http://localhost:8080.
 The project has the following structure:
 
 ```markdown
-art/
+Artix/
 ├───art-decode/
 │ ├── flags.go
 │ ├── README.md
